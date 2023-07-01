@@ -1,0 +1,9 @@
+# Ignora todo
+/*
+!.gitignore
+
+# Excepto...
+!rofi
+!bspwm
+!leftwm
+!kitty

@@ -1,0 +1,100 @@
+# programs
+#
+
+#dmenu
+super + shift + d
+	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+
+super + shift + r
+    rofi show -drun
+
+super + {e,w,b,v,x,n}
+    {thunar, \
+     firefox, \
+     brave, \
+     pavucontrol, \
+     archlinux-logout, \
+     notion-app, \}
+
+super + shift + s
+    deepin-screenshot
+
+ctrl + alt + {k,d,t,v,m}
+    {keepassxc,\
+     discord, \
+     telegram-desktop,\
+     virtualbox, \
+     virt-manager, \
+    }
+
+#xfce4-terminal dropdown
+F12
+    xfce4-terminal --drop-down
+
+
+# terminal emulator
+super + Return
+	  kitty
+
+# program launcher
+super + m
+	  rofi -combi-modi drun,window,ssh -show combi 
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+#PLAY
+XF86AudioPlay
+    playerctl play-pause
+
+#Next
+XF86AudioNext
+    playerctl next
+
+#previous
+XF86AudioPrev
+    playerctl previous
+
+#Stop
+XF86AudioStop
+    playerctl stop
+
+#Brightness up
+XF86MonBrightnessUp
+    xbacklight -inc 10
+
+#Brightness down
+XF86MonBrightnessDown
+    xbacklight -dec 10
+
+#Raises volume
+XF86AudioRaiseVolume
+    amixer set Master 10%+
+
+#Lowers volume
+XF86AudioLowerVolume
+    amixer set Master 10%-
+
+#Mute
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle
+
+#########################
+#        POLYBAR        #
+#########################
+
+#Hide polybar
+super + y
+    polybar-msg cmd toggle
+#hide
+super + alt + o
+		polybar-msg cmd hide | bspc config top_padding 5
+
+#unhide
+super + alt + p 
+		polybar-msg cmd show | bspc config top_padding 30
+
+#Picom Toggle
+ctrl + alt + o
+    ~/.config/leftwm/scripts/picom-toggle.sh

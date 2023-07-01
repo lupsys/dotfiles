@@ -1,0 +1,11 @@
+# Ignora todo
+/*
+!.gitignore
+
+# Excepciones a ignorar.
+!.config
+!.zshrc
+!.bashrc
+!.xsession
+!.xsessionrc
+!lupsys-installer.sh
