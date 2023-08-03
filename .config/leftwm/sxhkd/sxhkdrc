@@ -19,12 +19,13 @@ super + {e,w,b,v,x,n}
 super + shift + s
     deepin-screenshot
 
-ctrl + alt + {k,d,t,v,m}
+ctrl + alt + {k,d,t,v,m,w}
     {keepassxc,\
      discord, \
      telegram-desktop,\
      virtualbox, \
      virt-manager, \
+     whatsapp-for-linux, \
     }
 
 #xfce4-terminal dropdown
