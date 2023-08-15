@@ -179,4 +179,7 @@ configuration {
 	me-accept-custom: "Control+MouseDPrimary";
 */
 }
-@theme "/usr/share/rofi/themes/Arc-Dark-Mantis.rasi"
+//@theme "/usr/share/rofi/themes/Arc-Dark-Mantis.rasi"
+//@theme "/home/lupsys/.local/share/rofi/themes/rounded-green-dark.rasi"
+//@theme "/home/lupsys/.local/share/rofi/themes/squared-everforest.rasi"
+@theme "/home/lupsys/.local/share/rofi/themes/rounded-green-dark.rasi"
