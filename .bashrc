@@ -410,3 +410,5 @@ neofetch
 #sysinfo-retro
 #cpufetch
 #colorscript random
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
