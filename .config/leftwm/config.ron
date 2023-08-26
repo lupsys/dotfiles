@@ -16,7 +16,7 @@
       //( y: 1920, x: 0 height: 1080, width: 1920, ),
       //( y: 0, x: 1080 height: 1080, width: 1920, ),
     ],
-    tags: ["󰖟", "", "", "", "󱇪", "", "", "", ""],
+    tags: ["", "", "", "", "󱇪", "", "", "", ""],
     max_window_width: None,
     layouts: [
         MainAndVertStack,
