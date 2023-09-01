@@ -60,7 +60,7 @@ alias sps='sudo pacman -S'
 alias spr='sudo pacman -R'
 #alias cat='bat'
 alias update='sudo pacman -Syu'
-alias vim='nvim'
+alias vim='lvim'
 alias aur='paru -Syu'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
