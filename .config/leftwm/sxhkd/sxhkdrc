@@ -8,16 +8,15 @@ super + shift + d
 super + shift + r
     rofi show -drun
 
-super + {e,w,b,v,x,n}
+super + {e,w,v,x,n}
     {thunar, \
      firefox, \
-     brave, \
      pavucontrol, \
      archlinux-logout, \
      notion-app, \}
 
 super + shift + s
-    deepin-screenshot
+    ksnip
 
 ctrl + alt + {k,d,t,v,m,w}
     {keepassxc,\

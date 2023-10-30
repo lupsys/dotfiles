@@ -1,5 +1,5 @@
 //  _        ___                                      ___ _
-// | |      / __)_                                   / __|_)
+/ / | |      / __)_                                   / __|_)
 // | | ____| |__| |_ _ _ _ ____      ____ ___  ____ | |__ _  ____    ____ ___  ____
 // | |/ _  )  __)  _) | | |    \    / ___) _ \|  _ \|  __) |/ _  |  / ___) _ \|  _ \
 // | ( (/ /| |  | |_| | | | | | |  ( (__| |_| | | | | |  | ( ( | |_| |  | |_| | | | |
@@ -52,15 +52,9 @@
     sloppy_mouse_follows_focus: true,
     keybind: [
         (command: Execute, value: "xfce4-terminal --drop-down", modifier: [], key: "F12"),
-        (command: Execute, value: "killall conky", modifier: ["modkey"], key: "c"),
         (command: Execute, value: "dmenu_run -i -nb \'#191919\' -nf \'#fea63c\' -sb \'#fea63c\' -sf \'#191919\' -fn \'NotoMonoRegular:bold:pixelsize=14\'", modifier: ["modkey", "Shift"], key: "d"),
         (command: Execute, value: "archlinux-logout", modifier: ["modkey"], key: "x"),
-        (command: Execute, value: "thunar", modifier: ["modkey", "Shift"], key: "Return"),
         (command: Execute, value: "leftwm-command ToggleFullScreen", modifier: ["modkey"], key: "f"),
-        (command: Execute, value: "kitty", modifier: ["modkey"], key: "t"),
-        (command: Execute, value: "kitty", modifier: ["modkey"], key: "Return"),
-        (command: Execute, value: "alacritty", modifier: ["Control", "Alt"], key: "t"),
-        (command: Execute, value: "alacritty", modifier: ["Control", "Alt"], key: "Return"),
         (command: CloseWindow, value: "", modifier: ["modkey", "Shift"], key: "q"),
         (command: CloseWindow, value: "", modifier: ["modkey"], key: "q"),
         (command: SoftReload, value: "", modifier: ["modkey", "Shift"], key: "r"),

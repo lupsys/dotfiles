@@ -1,6 +1,7 @@
 # Fix the Java Problem
 export _JAVA_AWT_WM_NONREPARENTING=1
 export PATH="/usr/bin/rsync:$PATH"
+export PATH="/usr/bin/rsync:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="terminalparty"
 # source $ZSH/oh-my-zsh.sh
@@ -11,7 +12,7 @@ else
  PS1="%F{green}Lupsys%f %F{red}%1~%f%F{green}:>%f "
 fi
 
-setopt histignorealldups sharehistory
+setopt histignorealldups sharehistory braceccl
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
@@ -60,7 +61,7 @@ alias sps='sudo pacman -S'
 alias spr='sudo pacman -R'
 #alias cat='bat'
 alias update='sudo pacman -Syu'
-alias vim='lvim'
+alias vim='nvim'
 alias aur='paru -Syu'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
