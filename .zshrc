@@ -63,7 +63,7 @@ alias l.="ls -A | grep '^\.'"
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 
 ## alias cat='bat'
-alias update='sudo pacman -Syu'
+alias update='sudo pacman -Syyu'
 alias vim='nvim'
 alias aur='paru -Syu'
 
