@@ -59,16 +59,38 @@ alias lla='lsd -lha --group-dirs=first'
 alias ls='lsd --group-dirs=first'
 alias sps='sudo pacman -S'
 alias spr='sudo pacman -R'
-#alias cat='bat'
+alias l.="ls -A | grep '^\.'"
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+
+## alias cat='bat'
 alias update='sudo pacman -Syu'
 alias vim='nvim'
 alias aur='paru -Syu'
+
+## Colorize the grep command output for ease of use
+alias grep='grep --color=auto'
+alias egrep='grep --color=auto'
+alias fgrep='grep --color=auto'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+## Kill commands
+# quickly kill conkies
+alias kc="killall conky"
+# quickly kill polybar
+alias kp="killall polybar"
+# quickly kill picom
+alias kpi="killall picom"
+
+## Reading logs with bat
+alias lcalamares="bat /var/log/Calamares.log"
+alias lpacman="bat /var/log/pacman.log"
+alias lxorg="bat /var/log/Xorg.0.log"
+alias lxorgo="bat /var/log/Xorg.0.log.old"
 
 # Plugins
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-sudo/sudo.plugin.zsh
+source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
 
 # Functions
 function mkt(){

@@ -13,7 +13,8 @@ sxhkd -c ~/.config/leftwm/sxhkd/sxhkdrc &
 
 # diversity of apps to start
 nm-applet &
-pamac-tray &
+#pamac-tray &
+#/usr/bin/octopi-notifier &
 xfce4-power-manager &
 numlockx on &
 blueberry-tray &
@@ -56,6 +57,6 @@ monitors=($(polybar -m | sed s/:.*//))
 leftwm-state -q -n -t "$SCRIPTPATH"/sizes.liquid | sed -r '/^\s*$/d' | while read -r width x y
 do
   barname="mainbar$index"
-  monitor=${monitors[index]} width=$(( width - 16 )) polybar -c "$SCRIPTPATH"/polybar.config $barname &> /dev/null &
+  monitor=${monitors[index]} width=$(( width - 16 )) polybar -c "$SCRIPTPATH"/polybar/config.ini $barname &> /dev/null &
   let index=index+1
 done

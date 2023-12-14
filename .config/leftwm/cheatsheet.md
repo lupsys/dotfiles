@@ -3,7 +3,7 @@
   Super = Windows Key
 
 # common operations
-  Super          Return   *terminal* (`kitty`)
+  Super          Return   *terminal* (`alacritty`)
   Super          q        *quit* (kill focused window)
   Super   Shift  q        *quit* (kill focused window)
   Super          d        *show app menu* (`rofi`)
