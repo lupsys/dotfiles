@@ -28,7 +28,7 @@
     insert_behavior: Bottom,
     scratchpad: [],
     window_rules: [
-    ( window_class: "xfce4-notifyd", spawn_floating: true ),
+      ( window_class: "xfce4-notifyd", spawn_floating: true ),
     ],
     disable_current_tag_swap: true,
     disable_tile_drag: false,
