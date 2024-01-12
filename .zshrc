@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Fix the Java Problem
 export _JAVA_AWT_WM_NONREPARENTING=1
 export PATH="/usr/bin/rsync:$PATH"
@@ -161,3 +168,5 @@ bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 export VISUAL=/usr/bin/nvim
 export EDITOR=$VISUAL
+
+source ~/powerlevel10k/powerlevel10k.zsh-theme
