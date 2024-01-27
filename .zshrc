@@ -13,11 +13,11 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="terminalparty"
 # source $ZSH/oh-my-zsh.sh
 
-if [ "$(id -u)" -eq 0 ]; then
- PS1="%F{red}Lupsys%f %F{red}%1~%f%F{green}:>%f "
-else
- PS1="%F{green}Lupsys%f %F{red}%1~%f%F{green}:>%f "
-fi
+# if [ "$(id -u)" -eq 0 ]; then
+#  PS1="%F{red}Lupsys%f %F{red}%1~%f%F{green}:>%f "
+# else
+#  PS1="%F{green}Lupsys%f %F{red}%1~%f%F{green}:>%f "
+# fi
 
 setopt histignorealldups sharehistory braceccl
 
@@ -169,4 +169,5 @@ bindkey "^[[1;3D" backward-word
 export VISUAL=/usr/bin/nvim
 export EDITOR=$VISUAL
 
+source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
